@@ -1,0 +1,39 @@
+{
+  "name": "routines",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.mjs",
+  "type": "module",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node handlers/swagger.mjs",
+    "dev": "cross-env NODE_ENV=development nodemon server.mjs",
+    "test": "mocha __tests__/**/*.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "mongoose": "^8.3.0",
+    "passport": "^0.7.0",
+    "passport-github2": "^0.1.12",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-local": "^1.0.0",
+    "swagger-autogen": "^2.23.7",
+    "swagger-ui-express": "^5.0.0"
+  },
+  "devDependencies": {
+    "chai": "^5.1.0",
+    "chai-http": "^4.4.0",
+    "cross-env": "^7.0.3",
+    "mocha": "^10.4.0",
+    "nodemon": "^3.1.0",
+    "passport-mock": "^0.0.3",
+    "sinon": "^17.0.1",
+    "supertest": "^6.3.4"
+  }
+}

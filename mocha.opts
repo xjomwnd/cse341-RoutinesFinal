@@ -1,0 +1,4 @@
+--require esm
+--extension mjs
+--recursive
+__tests__/
